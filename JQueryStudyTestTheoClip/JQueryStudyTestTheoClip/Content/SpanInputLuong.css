@@ -1,0 +1,15 @@
+﻿body {
+
+}
+.wrapper {
+    position: relative;
+}
+
+input {
+    padding-left: 48px;
+}
+
+.wrapper span {
+    position: absolute;
+    left: 2px;
+}

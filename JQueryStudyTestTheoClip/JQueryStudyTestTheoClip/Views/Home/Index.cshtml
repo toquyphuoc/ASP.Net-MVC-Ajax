@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section scripts{
+    <script src="~/Scripts/plugins/mustache_min.js"></script>
+    <script src="~/Scripts/controllers/homeController.js"></script>
+}
+
+    
+
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Họ tên</td>
+                <td>Lương</td>
+                <td>Trạng thái</td>
+            </tr>
+        </thead>
+        <tbody id="tblData"></tbody>
+    </table>
+
+    <script id="data-template" type="x-tmpl-mustache">
+    <tr>
+          <td>{{id}}</td>
+          <td>{{Hoten}}</td>
+          <td><div class="wrapper"><input type="number" class="txtLuong" data-id="{{id}}"" value="{{Luong}}" /></div></td>
+          <td>{{{TrangThai}}}</td>
+      </tr>
+    </script>
+</div>
